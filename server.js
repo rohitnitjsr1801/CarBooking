@@ -13,7 +13,7 @@ const path = require('path');
 
 if (process.env.NODE_ENV === 'production') {
   // Set the static folder to 'client/build' for serving the built React app
-  app.use(express.static(path.join(__dirname, 'client/build')));
+  app.use(express.static(path.join(__dirname, '../client/build')));
 
   // Serve the index.html for all other routes in production
   app.get('*', (req, res) => {
